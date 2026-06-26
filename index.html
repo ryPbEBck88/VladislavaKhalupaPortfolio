@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Владиславы Халупы — рисование, пение, театр и ведущая">
+  <title>Владислава Халупа — Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="logo">В<span>.</span>Х</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Творчество</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting fade-in">Привет! Я</p>
+          <h1 class="hero-title fade-in delay-1">
+            Владислава<br>
+            <span class="accent">Халупа</span>
+          </h1>
+          <p class="hero-subtitle fade-in delay-2">
+            Мне 13 лет. Я рисую, пою, веду мероприятия и играю в спектаклях.
+            Здесь — мои работы и выступления.
+          </p>
+          <div class="hero-actions fade-in delay-3">
+            <a href="#projects" class="btn btn-primary">Смотреть работы</a>
+            <a href="#contact" class="btn btn-outline">Написать мне</a>
+          </div>
+        </div>
+        <div class="hero-visual fade-in delay-2">
+          <div class="avatar-frame">
+            <img
+              src="KhalupaVladislavaPortfolio.WEBP"
+              alt="Владислава Халупа"
+              class="avatar-photo"
+              width="280"
+              height="340"
+            >
+          </div>
+          <div class="floating-badge badge-1">🎨 Рисование</div>
+          <div class="floating-badge badge-2">🎤 Пение</div>
+          <div class="floating-badge badge-3">🎭 Театр</div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Прокрутить вниз">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Обо мне</span>
+          <h2 class="section-title">Кто я и чем занимаюсь</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="about-icon">🌟</div>
+            <h3>Обо мне</h3>
+            <p>
+              Мне 13 лет. Я занимаюсь творчеством: рисую, пою, выступаю
+              в спектаклях и веду концерты. Люблю сцену и всё, что связано
+              с искусством.
+            </p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon">🎤</div>
+            <h3>На сцене</h3>
+            <p>
+              Участвую в отчётных концертах студии «Ирбис», исполняю песни,
+              играю роли в спектаклях — от второстепенных до главных.
+              Также работаю ведущей на мероприятиях.
+            </p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon">🎨</div>
+            <h3>Творчество</h3>
+            <p>
+              Рисование, вокал, актёрское мастерство и работа ведущей —
+              всё это мои увлечения, которыми я делюсь в этом портфолио.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Творчество</span>
+          <h2 class="section-title">Мои работы и выступления</h2>
+          <p class="section-desc">Нажми на карточку, чтобы узнать подробнее и посмотреть видео</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal" data-project="1">
+            <div class="project-image" style="--hue: 280">
+              <span class="project-emoji">🎭</span>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Спектакль</span>
+              <h3>Омулевая бочка</h3>
+              <p>Отчётный концерт «Ирбис» — главная роль.</p>
+            </div>
+          </article>
+          <article class="project-card reveal" data-project="2">
+            <div class="project-image" style="--hue: 320">
+              <span class="project-emoji">🎤</span>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Песня</span>
+              <h3>Сын луны</h3>
+              <p>Вокальное выступление — исполнитель.</p>
+            </div>
+          </article>
+          <article class="project-card reveal" data-project="3">
+            <div class="project-image" style="--hue: 200">
+              <span class="project-emoji">🦁</span>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Спектакль</span>
+              <h3>Хроники Нарнии</h3>
+              <p>Отчётный концерт «Ирбис» — роль волка.</p>
+            </div>
+          </article>
+          <article class="project-card reveal" data-project="4">
+            <div class="project-image" style="--hue: 40">
+              <span class="project-emoji">🌅</span>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Спектакль</span>
+              <h3>Зори здесь тихие</h3>
+              <p>Режиссёр и исполнение роли.</p>
+            </div>
+          </article>
+          <article class="project-card reveal" data-project="5">
+            <div class="project-image" style="--hue: 120">
+              <span class="project-emoji">🐍</span>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Спектакль</span>
+              <h3>Рики-тики-тави</h3>
+              <p>Отчётный концерт «Ирбис».</p>
+            </div>
+          </article>
+          <article class="project-card reveal" data-project="6">
+            <div class="project-image" style="--hue: 300">
+              <span class="project-emoji">🎨</span>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Рисунок</span>
+              <h3>Мои рисунки</h3>
+              <p>Творческие работы — скоро добавлю сюда галерею.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Навыки</span>
+          <h2 class="section-title">Что я умею</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item reveal">
+            <div class="skill-info">
+              <span>Рисование</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-info">
+              <span>Вокал</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-info">
+              <span>Актёрское мастерство</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-info">
+              <span>Ведущая</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+        </div>
+        <div class="skills-tags reveal">
+          <span class="tag">Рисование</span>
+          <span class="tag">Вокал</span>
+          <span class="tag">Театр</span>
+          <span class="tag">Ведущая</span>
+          <span class="tag">Студия «Ирбис»</span>
+          <span class="tag">Сцена</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-text">
+            <span class="section-tag">Контакты</span>
+            <h2 class="section-title">Давай общаться!</h2>
+            <p>Если хочешь связаться со мной — напиши через форму или соцсети.</p>
+            <div class="social-links">
+              <a href="https://vk.com/id762584587" class="social-link" aria-label="VK" target="_blank" rel="noopener noreferrer">VK</a>
+              <a href="mailto:example@email.com" class="social-link" aria-label="Email">@</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Как тебя зовут?" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="твой@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="4" placeholder="Привет! Хочу сказать..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Отправить</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Владислава Халупа. Сделано с 💜</p>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">🌙</button>
+    </div>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+      <div class="modal-emoji" id="modalEmoji"></div>
+      <span class="project-tag" id="modalTag"></span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <a href="#" class="btn btn-primary modal-link" id="modalLink" target="_blank" rel="noopener noreferrer">Смотреть видео</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
