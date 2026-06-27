@@ -1,3 +1,31 @@
+// ===== Age (birth date: 16.02.2013) =====
+function getAge(birthDate) {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+function ageWord(n) {
+  const mod10 = n % 10;
+  const mod100 = n % 100;
+  if (mod100 >= 11 && mod100 <= 14) return 'лет';
+  if (mod10 === 1) return 'год';
+  if (mod10 >= 2 && mod10 <= 4) return 'года';
+  return 'лет';
+}
+
+const birthDate = new Date(2013, 1, 16);
+const age = getAge(birthDate);
+const ageText = `${age} ${ageWord(age)}`;
+
+document.querySelectorAll('.age').forEach(el => {
+  el.textContent = ageText;
+});
+
 // ===== Theme =====
 const themeToggle = document.getElementById('themeToggle');
 const savedTheme = localStorage.getItem('theme');
